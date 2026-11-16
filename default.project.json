@@ -1,0 +1,88 @@
+{
+  "name": "RelicRush",
+  "tree": {
+    "$className": "DataModel",
+    "Workspace": {
+      "$className": "Workspace",
+      "MarketSpawn": {
+        "$className": "SpawnLocation",
+        "$properties": {
+          "Position": [0, 1.1, 52],
+          "Size": [16, 1, 16],
+          "Anchored": true,
+          "CanCollide": true,
+          "Neutral": true,
+          "Duration": 0
+        }
+      }
+    },
+    "Lighting": {
+      "$className": "Lighting",
+      "$properties": {
+        "ClockTime": 17.35,
+        "GeographicLatitude": 38,
+        "Brightness": 2.4,
+        "Ambient": [0.294, 0.282, 0.333],
+        "OutdoorAmbient": [0.392, 0.373, 0.451],
+        "ColorShift_Top": [1.0, 0.843, 0.686],
+        "ColorShift_Bottom": [0.176, 0.157, 0.216],
+        "ShadowSoftness": 0.25,
+        "GlobalShadows": true,
+        "EnvironmentDiffuseScale": 0.5,
+        "EnvironmentSpecularScale": 0.6
+      },
+      "Atmosphere": {
+        "$className": "Atmosphere",
+        "$properties": {
+          "Density": 0.28,
+          "Offset": 0.15,
+          "Color": [0.706, 0.745, 0.843],
+          "Decay": [0.353, 0.294, 0.392],
+          "Glare": 0.15,
+          "Haze": 0.9
+        }
+      },
+      "RelicRushColorCorrection": {
+        "$className": "ColorCorrectionEffect",
+        "$properties": {
+          "Brightness": 0.01,
+          "Contrast": 0.12,
+          "Saturation": 0.18,
+          "TintColor": [1.0, 0.98, 0.96]
+        }
+      },
+      "RelicRushBloom": {
+        "$className": "BloomEffect",
+        "$properties": {
+          "Intensity": 0.35,
+          "Size": 18,
+          "Threshold": 0.94
+        }
+      },
+      "RelicRushSunRays": {
+        "$className": "SunRaysEffect",
+        "$properties": {
+          "Intensity": 0.08,
+          "Spread": 0.65
+        }
+      }
+    },
+    "ReplicatedStorage": {
+      "RelicRush": {
+        "$path": "src/shared"
+      }
+    },
+    "ServerScriptService": {
+      "RelicRush": {
+        "$path": "src/server"
+      }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "RelicRush": {
+          "$path": "src/client"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+# Roblox place/model binaries and generated exports
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+
+# Package management (Wally)
+Packages/
+ServerPackages/
+.wally/
+
+# Build artifacts
+build/
+dist/
+bin/
+
+# Environment variables, credentials, and private keys
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.*
+credentials.*
+
+# OS and system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE and editor settings
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+
+# Local workspaces, snapshots, and backups
+_codex_parallel/
+scratch/
+tools/backup/
+*.bak
+*.backup
+
+# Blender automatic backup files
+*.blend1
+*.blend2
+
+# Temporary lock files
+*.lock
